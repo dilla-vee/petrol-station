@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Current Shell Station fuel prices - Super Petrol, Diesel and Kerosene. Updated daily at 6AM." />
+  <title>Fuel Prices | Shell Station Nairobi</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Shell Station Home">
+          <div class="logo-shell" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><path d="M50 5 C25 5 5 25 5 50 C5 75 25 95 50 95 C75 95 95 75 95 50 C95 25 75 5 50 5 Z M50 15 L65 40 L90 40 L70 58 L78 83 L50 68 L22 83 L30 58 L10 40 L35 40 Z"/></svg>
+          </div>
+          <div class="logo-text"><strong>SHELL</strong><span>Service Station</span></div>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="fuel.html" class="active">Fuel</a>
+          <a href="food.html">Food</a>
+          <a href="products.html">Products</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-cta">
+          <a href="tel:+254700000000" class="header-phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            0700 000 000
+          </a>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="fuel.html" class="active">⛽ Fuel &amp; Prices</a>
+      <a href="food.html">🍔 Food &amp; Drinks</a>
+      <a href="products.html">🛢️ Products</a>
+      <a href="services.html">🔧 Services</a>
+      <a href="about.html">ℹ️ About Us</a>
+      <a href="contact.html">📞 Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section style="background:var(--shell-dark);padding:48px 0 40px;color:white;" aria-labelledby="fuelPageHeading">
+      <div class="container">
+        <span class="badge" style="margin-bottom:14px;display:inline-block;">Updated Daily</span>
+        <h1 id="fuelPageHeading" style="font-size:2rem;font-weight:800;margin-bottom:10px;">Fuel Prices</h1>
+        <p style="color:rgba(255,255,255,0.70);max-width:520px;" id="priceTimestamp">Prices updated daily at 6:00 AM per EPR guidelines.</p>
+      </div>
+    </section>
+
+    <!-- Fuel Prices Table -->
+    <section class="section" aria-labelledby="currentPricesHeading">
+      <div class="container">
+        <h2 class="section-title" id="currentPricesHeading">Current Pump Prices</h2>
+        <p class="section-sub">All prices in Kenya Shillings per litre. Regulated by the Energy &amp; Petroleum Regulatory Authority.</p>
+
+        <div style="overflow-x:auto;margin-bottom:40px;">
+          <table class="fuel-table" aria-label="Fuel prices table">
+            <thead>
+              <tr>
+                <th scope="col">Fuel Type</th>
+                <th scope="col">Grade / Product</th>
+                <th scope="col">Price (KSh/L)</th>
+                <th scope="col">Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="fuel-type-icon fuel-premium" aria-hidden="true">V+</span>
+                  <strong>Shell V-Power</strong>
+                </td>
+                <td>Premium Unleaded<br><small style="color:var(--text-light);">Highest octane, maximum performance</small></td>
+                <td class="price-cell">215.80</td>
+                <td>Performance &amp; premium cars</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="fuel-type-icon fuel-petrol" aria-hidden="true">SP</span>
+                  <strong>Super Petrol</strong>
+                </td>
+                <td>Unleaded 91<br><small style="color:var(--text-light);">Standard petrol for most vehicles</small></td>
+                <td class="price-cell">211.50</td>
+                <td>Petrol cars &amp; motorcycles</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="fuel-type-icon fuel-diesel" aria-hidden="true">D</span>
+                  <strong>Diesel</strong>
+                </td>
+                <td>Shell FuelSave Diesel<br><small style="color:var(--text-light);">Low sulphur, improved efficiency</small></td>
+                <td class="price-cell">197.30</td>
+                <td>Trucks, matatus, SUVs</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="fuel-type-icon" style="background:#e8f5e9;color:#2e7d32;" aria-hidden="true">K</span>
+                  <strong>Kerosene</strong>
+                </td>
+                <td>Domestic Kerosene<br><small style="color:var(--text-light);">For cooking and lighting</small></td>
+                <td class="price-cell">142.00</td>
+                <td>Stoves &amp; lamps</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Price note -->
+        <div style="background:var(--shell-gray);border-left:4px solid var(--shell-yellow);padding:16px 20px;border-radius:0 8px 8px 0;margin-bottom:48px;" role="note">
+          <strong style="font-size:0.9rem;">Price Note:</strong>
+          <p style="font-size:0.88rem;color:var(--text-light);margin-top:4px;">
+            Prices are regulated by the Energy &amp; Petroleum Regulatory Authority (EPRA) and reviewed monthly.
+            Our pump prices are always current and displayed on the forecourt boards.
+            Prices shown are per litre inclusive of all taxes and levies.
+          </p>
+        </div>
+
+        <!-- Shell Products detail -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-bottom:48px;">
+          <div class="card" style="border-top:3px solid var(--shell-red);">
+            <h3 style="margin-bottom:8px;">⚡ Shell V-Power</h3>
+            <p>Our premium formula with active cleaning technology. Clears deposits for improved engine performance. Recommended for turbocharged and high-compression engines.</p>
+            <ul style="font-size:0.88rem;color:var(--text-light);margin-top:12px;padding-left:0;">
+              <li style="padding:4px 0;border-bottom:1px solid var(--shell-border);">✓ Higher octane rating</li>
+              <li style="padding:4px 0;border-bottom:1px solid var(--shell-border);">✓ Engine deposit cleaner</li>
+              <li style="padding:4px 0;">✓ Improved throttle response</li>
+            </ul>
+          </div>
+
+          <div class="card" style="border-top:3px solid #0d6efd;">
+            <h3 style="margin-bottom:8px;">🚛 Shell FuelSave Diesel</h3>
+            <p>Formulated for better fuel economy. Low-sulphur formula protects your injection system and reduces maintenance costs. Ideal for high-mileage commercial vehicles.</p>
+            <ul style="font-size:0.88rem;color:var(--text-light);margin-top:12px;padding-left:0;">
+              <li style="padding:4px 0;border-bottom:1px solid var(--shell-border);">✓ Up to 2% better economy</li>
+              <li style="padding:4px 0;border-bottom:1px solid var(--shell-border);">✓ Injector protection</li>
+              <li style="padding:4px 0;">✓ Reduces exhaust smoke</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Loyalty Card -->
+        <div class="loyalty-card" role="complementary" aria-labelledby="loyaltyHeading">
+          <div>
+            <span class="badge" style="margin-bottom:12px;">ClubSmart Loyalty</span>
+            <h3 id="loyaltyHeading">Earn Points on Every Litre</h3>
+            <p>Join Shell ClubSmart and earn 1 point for every KSh 100 spent on fuel. Redeem points for free fuel, food or products.</p>
+            <a href="contact.html" class="btn btn-secondary btn-sm" style="margin-top:4px;">Sign Up Free →</a>
+          </div>
+          <div style="text-align:center;background:rgba(251,206,7,0.10);border-radius:12px;padding:24px 32px;">
+            <div style="font-size:3rem;font-weight:900;color:var(--shell-yellow);">1pt</div>
+            <div style="font-size:0.8rem;color:rgba(255,255,255,0.65);">per KSh 100</div>
+            <div style="margin-top:12px;font-size:0.8rem;color:rgba(255,255,255,0.50);">Free to join</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="section section-alt" aria-labelledby="paymentHeading">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title" id="paymentHeading">We Accept All Payment Methods</h2>
+          <p class="section-sub">No queues, no hassle — pay the way you want.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:800px;margin:0 auto;">
+          <div class="card text-center" style="padding:28px 20px;">
+            <div style="font-size:2.5rem;margin-bottom:12px;">📱</div>
+            <h4 style="margin-bottom:6px;">M-Pesa</h4>
+            <p style="font-size:0.85rem;color:var(--text-light);">Paybill: <strong>700200</strong><br>Account: Pump number</p>
+          </div>
+          <div class="card text-center" style="padding:28px 20px;">
+            <div style="font-size:2.5rem;margin-bottom:12px;">💳</div>
+            <h4 style="margin-bottom:6px;">Visa / Mastercard</h4>
+            <p style="font-size:0.85rem;color:var(--text-light);">All major cards accepted<br>Contactless enabled</p>
+          </div>
+          <div class="card text-center" style="padding:28px 20px;">
+            <div style="font-size:2.5rem;margin-bottom:12px;">💵</div>
+            <h4 style="margin-bottom:6px;">Cash</h4>
+            <p style="font-size:0.85rem;color:var(--text-light);">Kenya Shillings<br>Change always available</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-shell"><svg viewBox="0 0 100 100"><path d="M50 5 C25 5 5 25 5 50 C5 75 25 95 50 95 C75 95 95 75 95 50 C95 25 75 5 50 5 Z M50 15 L65 40 L90 40 L70 58 L78 83 L50 68 L22 83 L30 58 L10 40 L35 40 Z"/></svg></div>
+            <div class="logo-text"><strong>SHELL</strong><span>Service Station</span></div>
+          </a>
+          <p>Uhuru Highway, Nairobi. Open 6AM – 10PM, 7 days a week.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fuel.html">Fuel Prices</a></li>
+            <li><a href="food.html">Food Menu</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Fuel Products</h4>
+          <ul>
+            <li><a href="fuel.html">Shell V-Power</a></li>
+            <li><a href="fuel.html">Super Petrol</a></li>
+            <li><a href="fuel.html">FuelSave Diesel</a></li>
+            <li><a href="fuel.html">Kerosene</a></li>
+            <li><a href="fuel.html">ClubSmart Loyalty</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+254700000000">📞 0700 000 000</a></li>
+            <li><a href="contact.html">📍 Get Directions</a></li>
+            <li style="color:rgba(255,255,255,0.65);font-size:0.88rem;">Mon–Sun: 6AM – 10PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shell Station, Nairobi. All rights reserved.</p>
+        <p>Prices per EPR regulations. Updated daily at 6AM.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

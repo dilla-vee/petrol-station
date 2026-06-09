@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shell Select food menu - fresh meals, snacks, coffee and cold drinks available at Shell Station Nairobi." />
+  <title>Food &amp; Drinks | Shell Station Nairobi</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo" aria-label="Shell Station Home">
+          <div class="logo-shell" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 5 C25 5 5 25 5 50 C5 75 25 95 50 95 C75 95 95 75 95 50 C95 25 75 5 50 5 Z M50 15 L65 40 L90 40 L70 58 L78 83 L50 68 L22 83 L30 58 L10 40 L35 40 Z"/></svg></div>
+          <div class="logo-text"><strong>SHELL</strong><span>Service Station</span></div>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="fuel.html">Fuel</a>
+          <a href="food.html" class="active">Food</a>
+          <a href="products.html">Products</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-cta">
+          <a href="tel:+254700000000" class="header-phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            0700 000 000
+          </a>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="fuel.html">⛽ Fuel &amp; Prices</a>
+      <a href="food.html" class="active">🍔 Food &amp; Drinks</a>
+      <a href="products.html">🛢️ Products</a>
+      <a href="services.html">🔧 Services</a>
+      <a href="about.html">ℹ️ About Us</a>
+      <a href="contact.html">📞 Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section style="background:linear-gradient(135deg,#1a1a1a,#333);padding:48px 0 40px;color:white;" aria-labelledby="foodPageHeading">
+      <div class="container">
+        <span class="badge" style="margin-bottom:14px;display:inline-block;">Shell Select</span>
+        <h1 id="foodPageHeading" style="font-size:2rem;font-weight:800;margin-bottom:10px;">Food &amp; Drinks</h1>
+        <p style="color:rgba(255,255,255,0.70);max-width:500px;">Fresh meals, snacks, coffee, and cold drinks. Available every day 6AM – 10PM.</p>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section" aria-labelledby="menuHeading">
+      <div class="container">
+        <h2 class="section-title" id="menuHeading">Our Menu</h2>
+        <p class="section-sub">Filter by category to find what you need fast.</p>
+
+        <!-- Category Filter -->
+        <div class="menu-categories" role="group" aria-label="Filter menu by category">
+          <button class="cat-btn active" data-category="all">All Items</button>
+          <button class="cat-btn" data-category="breakfast">🌅 Breakfast</button>
+          <button class="cat-btn" data-category="meals">🍽️ Meals</button>
+          <button class="cat-btn" data-category="snacks">🥪 Snacks</button>
+          <button class="cat-btn" data-category="drinks">☕ Drinks</button>
+          <button class="cat-btn" data-category="groceries">🛒 Groceries</button>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid" role="list" aria-label="Menu items">
+
+          <!-- Breakfast -->
+          <article class="menu-item" data-category="breakfast" role="listitem">
+            <div class="menu-img" aria-hidden="true">🍳</div>
+            <div class="menu-details">
+              <h4>Full Breakfast Plate</h4>
+              <p>Eggs, sausages, toast, baked beans &amp; tea</p>
+              <div class="menu-price">KSh 380</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="breakfast" role="listitem">
+            <div class="menu-img" aria-hidden="true">🥐</div>
+            <div class="menu-details">
+              <h4>Croissant &amp; Coffee</h4>
+              <p>Butter croissant with flat white or cappuccino</p>
+              <div class="menu-price">KSh 250</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="breakfast" role="listitem">
+            <div class="menu-img" aria-hidden="true">🍌</div>
+            <div class="menu-details">
+              <h4>Fruit &amp; Yoghurt</h4>
+              <p>Seasonal fruit cup with Greek yoghurt</p>
+              <div class="menu-price">KSh 180</div>
+            </div>
+          </article>
+
+          <!-- Meals -->
+          <article class="menu-item" data-category="meals" role="listitem">
+            <div class="menu-img" aria-hidden="true">🍗</div>
+            <div class="menu-details">
+              <h4>Chicken &amp; Chips</h4>
+              <p>Crispy fried chicken with seasoned fries</p>
+              <div class="menu-price">KSh 450</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="meals" role="listitem">
+            <div class="menu-img" aria-hidden="true">🌭</div>
+            <div class="menu-details">
+              <h4>Beef Hotdog</h4>
+              <p>Grilled beef sausage, mustard, ketchup in a bun</p>
+              <div class="menu-price">KSh 280</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="meals" role="listitem">
+            <div class="menu-img" aria-hidden="true">🍔</div>
+            <div class="menu-details">
+              <h4>Beef Burger</h4>
+              <p>Quarter pounder with cheese, lettuce &amp; tomato</p>
+              <div class="menu-price">KSh 520</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="meals" role="listitem">
+            <div class="menu-img" aria-hidden="true">🍕</div>
+            <div class="menu-details">
+              <h4>Pizza Slice</h4>
+              <p>Cheese &amp; tomato or pepperoni (changes daily)</p>
+              <div class="menu-price">KSh 220</div>
+            </div>
+          </article>
+
+          <!-- Snacks -->
+          <article class="menu-item" data-category="snacks" role="listitem">
+            <div class="menu-img" aria-hidden="true">🥪</div>
+            <div class="menu-details">
+              <h4>Club Sandwich</h4>
+              <p>Triple decker: chicken, bacon, egg &amp; mayo</p>
+              <div class="menu-price">KSh 320</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="snacks" role="listitem">
+            <div class="menu-img" aria-hidden="true">🥜</div>
+            <div class="menu-details">
+              <h4>Mixed Nuts 50g</h4>
+              <p>Cashews, almonds &amp; peanuts, lightly salted</p>
+              <div class="menu-price">KSh 120</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="snacks" role="listitem">
+            <div class="menu-img" aria-hidden="true">🍫</div>
+            <div class="menu-details">
+              <h4>Chocolate Bar</h4>
+              <p>Cadbury, Kit Kat, Snickers — ask for available brands</p>
+              <div class="menu-price">From KSh 80</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="snacks" role="listitem">
+            <div class="menu-img" aria-hidden="true">🍟</div>
+            <div class="menu-details">
+              <h4>Fries</h4>
+              <p>Regular or large, with your choice of sauce</p>
+              <div class="menu-price">KSh 150 / 220</div>
+            </div>
+          </article>
+
+          <!-- Drinks -->
+          <article class="menu-item" data-category="drinks" role="listitem">
+            <div class="menu-img" aria-hidden="true">☕</div>
+            <div class="menu-details">
+              <h4>Fresh Coffee</h4>
+              <p>Espresso, flat white, cappuccino or Americano</p>
+              <div class="menu-price">From KSh 150</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="drinks" role="listitem">
+            <div class="menu-img" aria-hidden="true">🧃</div>
+            <div class="menu-details">
+              <h4>Fresh Juice</h4>
+              <p>Orange, mango or mixed tropical — 300ml</p>
+              <div class="menu-price">KSh 180</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="drinks" role="listitem">
+            <div class="menu-img" aria-hidden="true">🥤</div>
+            <div class="menu-details">
+              <h4>Cold Drinks</h4>
+              <p>Sodas, water, energy drinks from the chiller</p>
+              <div class="menu-price">From KSh 60</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="drinks" role="listitem">
+            <div class="menu-img" aria-hidden="true">🍵</div>
+            <div class="menu-details">
+              <h4>Kenyan Tea (Chai)</h4>
+              <p>Full-cream milk chai with sugar, the proper way</p>
+              <div class="menu-price">KSh 80</div>
+            </div>
+          </article>
+
+          <!-- Groceries -->
+          <article class="menu-item" data-category="groceries" role="listitem">
+            <div class="menu-img" aria-hidden="true">🥛</div>
+            <div class="menu-details">
+              <h4>Fresh Milk 500ml</h4>
+              <p>Brookside whole or low-fat, from the chiller</p>
+              <div class="menu-price">KSh 65</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="groceries" role="listitem">
+            <div class="menu-img" aria-hidden="true">🍞</div>
+            <div class="menu-details">
+              <h4>Bread Loaf</h4>
+              <p>Sliced white or brown 400g loaf</p>
+              <div class="menu-price">KSh 75</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="groceries" role="listitem">
+            <div class="menu-img" aria-hidden="true">🥚</div>
+            <div class="menu-details">
+              <h4>Eggs (6 pack)</h4>
+              <p>Fresh free-range eggs, pack of 6</p>
+              <div class="menu-price">KSh 110</div>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="groceries" role="listitem">
+            <div class="menu-img" aria-hidden="true">🧴</div>
+            <div class="menu-details">
+              <h4>Toiletries</h4>
+              <p>Toothpaste, soap, wipes, sanitiser — travel sizes</p>
+              <div class="menu-price">From KSh 50</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours -->
+    <section class="section section-alt" aria-labelledby="shopHoursHeading">
+      <div class="container" style="max-width:600px;">
+        <h2 class="section-title text-center" id="shopHoursHeading">Shell Select Opening Hours</h2>
+        <p class="section-sub text-center">Hot food available from 6AM. Full menu from 7AM daily.</p>
+        <div class="card">
+          <table class="hours-table" aria-label="Opening hours">
+            <tbody>
+              <tr id="hours-monday"><td>Monday</td><td>6:00 AM – 10:00 PM</td></tr>
+              <tr id="hours-tuesday"><td>Tuesday</td><td>6:00 AM – 10:00 PM</td></tr>
+              <tr id="hours-wednesday"><td>Wednesday</td><td>6:00 AM – 10:00 PM</td></tr>
+              <tr id="hours-thursday"><td>Thursday</td><td>6:00 AM – 10:00 PM</td></tr>
+              <tr id="hours-friday"><td>Friday</td><td>6:00 AM – 10:00 PM</td></tr>
+              <tr id="hours-saturday"><td>Saturday</td><td>6:00 AM – 10:00 PM</td></tr>
+              <tr id="hours-sunday"><td>Sunday</td><td>7:00 AM – 9:00 PM</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.82rem;color:var(--text-light);margin-top:12px;padding:0 14px 14px;">Hot breakfast available from 6AM. Menu subject to seasonal availability.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-shell"><svg viewBox="0 0 100 100"><path d="M50 5 C25 5 5 25 5 50 C5 75 25 95 50 95 C75 95 95 75 95 50 C95 25 75 5 50 5 Z M50 15 L65 40 L90 40 L70 58 L78 83 L50 68 L22 83 L30 58 L10 40 L35 40 Z"/></svg></div>
+            <div class="logo-text"><strong>SHELL</strong><span>Service Station</span></div>
+          </a>
+          <p>Uhuru Highway, Nairobi. Open 6AM – 10PM, 7 days a week.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fuel.html">Fuel Prices</a></li>
+            <li><a href="food.html">Food Menu</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Food Categories</h4>
+          <ul>
+            <li><a href="food.html">Breakfast</a></li>
+            <li><a href="food.html">Hot Meals</a></li>
+            <li><a href="food.html">Snacks</a></li>
+            <li><a href="food.html">Hot Drinks</a></li>
+            <li><a href="food.html">Cold Drinks</a></li>
+            <li><a href="food.html">Groceries</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+254700000000">📞 0700 000 000</a></li>
+            <li><a href="contact.html">📍 Get Directions</a></li>
+            <li style="color:rgba(255,255,255,0.65);font-size:0.88rem;">Mon–Sat: 6AM – 10PM<br>Sun: 7AM – 9PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shell Station, Nairobi. All rights reserved.</p>
+        <p>Menu items subject to availability. Prices inclusive of VAT.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
